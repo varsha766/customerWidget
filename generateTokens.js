@@ -133,5 +133,4 @@ async function getBearerToken(didJwtToken, KYC_ACCESS_TOKEN, SSI_ACCESS_TOKEN, s
 module.exports = {
     prepareAccessTokens,
     authenticateAndIssueKycUserAccessToken,
-    startSession
 }

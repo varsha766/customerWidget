@@ -12,5 +12,4 @@ async function startSession(KYC_ACCESS_TOKEN) {
 }
 module.exports = {
     startSession,
-    handleUserConsent
 }

@@ -24,7 +24,7 @@ async function createDID(namespace = "", SSI_ACCESS_TOKEN) {
         // type == Ed25519VerificationKey2020
         return {
             did: resp.did,
-            verficationMethodId: resp.metadata.didDocument.verficationMethods.find(x => x.type == 'Ed25519VerificationKey2020').id
+            verficationMethodId: resp.metaData.didDocument.verificationMethod.find(x => x.type == 'Ed25519VerificationKey2020').id
         };
     } catch (error) {
         console.error("Failed to create DID:", error);
